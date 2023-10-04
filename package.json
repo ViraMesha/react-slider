@@ -12,13 +12,16 @@
   },
   "lint-staged": {
     "*.{json,md,html}": [
+      "eslint",
       "npx prettier --write"
     ],
     "*.{css,scss}": [
       "npx prettier --write"
     ],
     "*.{js,jsx,ts,tsx}": [
-      "npx prettier --write"
+      "npx prettier --write",
+      "eslint --fix",
+      "flow focus-check"
     ]
   },
   "dependencies": {
