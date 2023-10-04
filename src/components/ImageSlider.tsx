@@ -24,8 +24,6 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
     });
   }
 
-  console.log("hello world");
-
   return (
     <section aria-label="Image Slider" className="img-slider-section">
       <a href="#after-image-slider-controls" className="skip-link">
